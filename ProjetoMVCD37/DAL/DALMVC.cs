@@ -12,14 +12,14 @@ namespace ProjetoMVCD37.DAL
         private MySqlConnection conexao;
         private string string_conexao = "Persist security info = false;" +
                                         "server=localhost;" +
-                                        "database=ProjetoMVCD37" +
+                                        "database=ProjetoMVCD37;" +
                                         "user=root;pwd=;";
         public void conectar()
         {
             try
             {
-                this.conexao = new MySqlConnection(this.string_conexao);
-                this.conexao.Open();
+                conexao = new MySqlConnection(string_conexao);
+                conexao.Open();
             } 
             catch (MySqlException exception)
             {
@@ -31,8 +31,8 @@ namespace ProjetoMVCD37.DAL
         {
             try
             {
-                this.conectar();
-                MySqlCommand comando = new MySqlCommand(query, this.conexao);
+                conectar();
+                MySqlCommand comando = new MySqlCommand(query, conexao);
                 comando.ExecuteNonQuery();
             }
             catch (MySqlException exception)
@@ -41,7 +41,7 @@ namespace ProjetoMVCD37.DAL
             }
             finally
             {
-                this.conexao.Close();
+                conexao.Close();
             }
         }
 
@@ -49,9 +49,9 @@ namespace ProjetoMVCD37.DAL
         {
             try
             {
-                this.conectar();
+                conectar();
                 DataTable dt = new DataTable();
-                MySqlDataAdapter dados = new MySqlDataAdapter(query, this.conexao);
+                MySqlDataAdapter dados = new MySqlDataAdapter(query, conexao);
                 dados.Fill(dt);
                 return dt;
             }
@@ -61,7 +61,7 @@ namespace ProjetoMVCD37.DAL
             }
             finally
             {
-                this.conexao.Close();
+                conexao.Close();
             }
         }
     }
