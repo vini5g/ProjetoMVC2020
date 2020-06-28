@@ -42,13 +42,13 @@ namespace ProjetoMVCD37.UI
         protected global::System.Web.UI.WebControls.TextBox txtCpfD37;
 
         /// <summary>
-        /// Controle lblCpfInvalido.
+        /// Controle ValidacaoCPF.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCpfInvalido;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidacaoCPF;
 
         /// <summary>
         /// Controle lblNomeD37.
@@ -69,13 +69,13 @@ namespace ProjetoMVCD37.UI
         protected global::System.Web.UI.WebControls.TextBox txtNomeD37;
 
         /// <summary>
-        /// Controle lblNomeInvalido.
+        /// Controle ValidacaoNome.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNomeInvalido;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidacaoNome;
 
         /// <summary>
         /// Controle lblNomeMaeD37.
@@ -96,13 +96,13 @@ namespace ProjetoMVCD37.UI
         protected global::System.Web.UI.WebControls.TextBox txtNomeMaeD37;
 
         /// <summary>
-        /// Controle lblNomeMaeInvalido.
+        /// Controle ValidacaoNomeMae.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNomeMaeInvalido;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidacaoNomeMae;
 
         /// <summary>
         /// Controle btnEnviar.

@@ -178,7 +178,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="UI\FrmMVCD37.aspx" />
-    <Content Include="UI\stylesFrm.css" />
+    <Content Include="Content\stylesFrm.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
